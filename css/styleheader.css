@@ -73,7 +73,7 @@ a {
 
 .nav-xbootstrap li a {
   padding: 15px 20px;
-  font-size: 14;
+  font-size: 14px;
   color: #def1f0;
   display: inline-block;
   outline: 0;
@@ -105,7 +105,7 @@ a {
 
 .nav-xbootstrap li ul.dropdown li a {
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
   display: block;
   font-weight: 400;
@@ -116,8 +116,12 @@ a {
 }
 
 .nav-xbootstrap li:hover a {
-  background: #2980b9;
-  color: #fff !important;
+  background: var(--secondary);
+}
+
+.nav-xbootstrap li:hover a.logo {
+  background: transparent;
+  color: #fff;
 }
 
 .nav-xbootstrap li:first-child:hover a {
@@ -290,6 +294,10 @@ a {
     color: #fff !important;
   }
 
+  .nav-xbootstrap li a.logo {
+    background-color: transparent !important;
+  }
+
   .nav-xbootstrap li ul.dropdown li a {
     padding: 10px 10px 10px 30px;
   }
@@ -336,7 +344,6 @@ a {
   }
 
   .nav-xbootstrap ul {
-    height: 80px;
     display: flex;
     align-items: center;
   }

@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: transparent;
+}
+
+
 /*end general CSS*/
 .image-logo {
   height: 7vh;
