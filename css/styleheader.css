@@ -28,6 +28,8 @@ a {
 .container-header > nav {
   height: 80px;
   background: #2c3d55;
+  z-index: 3;
+  position: relative;
 }
 
 .nav-xbootstrap {

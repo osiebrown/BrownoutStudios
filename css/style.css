@@ -48,7 +48,6 @@ a:hover {
   background-color: transparent;
 }
 
-
 /*end general CSS*/
 .image-logo {
   height: 7vh;
@@ -65,20 +64,36 @@ video {
 .title-offer,
 .description-offer,
 .title-contact,
-.title-contact a {
+.title-contact a,
+.description-contact a {
   color: var(--colorfont);
 }
 
-.title-intro,
-.title-service,
-.title-offer {
-  font-size: 1.5rem;
+.title-intro {
+  font-size: 3.3rem;
+  padding-top: 50px;
 }
-
-.description-intro,
+.title-service,
+.title-offer,
+.title-contact {
+  font-size: 2.6rem;
+}
+.title-service,
+.title-offer,
+.btn {
+  margin: 25px 0;
+}
+.description-intro {
+  font-size: 2.1rem;
+}
 .description-service,
+.description-offer,
+.description-contact a {
+  font-size: 1.7rem;
+}
 .description-offer {
-  font-size: 1rem;
+  text-shadow: 1px 1px 3px black;
+  width: 100%;
 }
 
 .intro {
@@ -86,6 +101,7 @@ video {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 600px;
 }
 
 .services {
@@ -96,62 +112,76 @@ video {
   background-image: linear-gradient(to bottom, white, var(--color1));
 }
 
-.image-bg {
-  background-image: url("../img/bgoffer1.jpg");
+.image-bg,
+.image-bg2,
+.image-bg3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 300px;
+  height: 600px;
+}
+
+.image-bg {
+  background-image: url("../img/bgoffer1.jpg");
 }
 
 .image-bg2 {
   background-image: url("../img/bgoffer2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 300px;
 }
 
 .image-bg3 {
   background-image: url("../img/bgoffer3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 300px;
 }
 
 aside.position-absolute {
-  bottom: 32px;
-}
-
-.description-offer {
-  color: var(--colorfont);
-  text-shadow: 1px 1px 3px black;
+  bottom: 190px;
   width: 100%;
-  font-size: 1.3rem;
 }
 
 .footer {
   background: var(--primaryBlue);
+  padding: 65px 0 25px;
 }
-
-.description-contact a {
-  color: var(--color5);
+.description-contact {
+  padding-top: 10px;
 }
-
+.rrss1,
+.rrss2,
+.rrss3,
+.rrss4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25vw;
+  height: 25px;
+}
+.rrss1 {
+  background-image: url("../img/facecolor.png");
+}
+.rrss2 {
+  background-image: url("../img/twittercolor.png");
+}
+.rrss3 {
+  background-image: url("../img/youtubecolor.png");
+}
+.rrss4 {
+  background-image: url("../img/emailcolor.png");
+}
 @media only screen and (min-width: 901px) {
   .description-offer {
-    width: 90%;
+    width: 60%;
   }
 
   aside.position-absolute {
-    bottom: 72px;
+    bottom: 130px;
   }
 
   aside.absolute-especial {
-    left: 55%;
+    width: 80%;
+    left: 20%;
+  }
+  .absolute-especial > .description-offer {
+    text-align: end;
   }
 }
