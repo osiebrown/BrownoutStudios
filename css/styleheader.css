@@ -7,6 +7,7 @@
   --color5: #ef5b5b;
   --secondary: #6c8ead;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,10 +24,12 @@ a {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .container-header > nav {
   height: 80px;
   background: #2c3d55;
 }
+
 .nav-xbootstrap {
   height: 80px;
   display: flex;
@@ -40,6 +43,7 @@ a {
 .nav-bg-xbootstrap {
   z-index: 3;
 }
+
 .iconsize {
   font-size: 12px;
   top: 2px;
@@ -52,9 +56,11 @@ a {
   padding: 0;
   display: block;
 }
+
 .nav-xbootstrap > ul {
   margin: 0;
 }
+
 .nav-xbootstrap li {
   list-style-type: none;
   margin: 0;
@@ -67,7 +73,7 @@ a {
 
 .nav-xbootstrap li a {
   padding: 15px 20px;
-  font-size: 14;
+  font-size: 14px;
   color: #def1f0;
   display: inline-block;
   outline: 0;
@@ -99,7 +105,7 @@ a {
 
 .nav-xbootstrap li ul.dropdown li a {
   padding: 15px 20px;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
   display: block;
   font-weight: 400;
@@ -110,8 +116,12 @@ a {
 }
 
 .nav-xbootstrap li:hover a {
-  background: #2980b9;
-  color: #fff !important;
+  background: var(--secondary);
+}
+
+.nav-xbootstrap li:hover a.logo {
+  background: transparent;
+  color: #fff;
 }
 
 .nav-xbootstrap li:first-child:hover a {
@@ -141,13 +151,16 @@ a {
   right: -5px;
   content: "";
 }
+
 .title-mobile {
   display: none;
 }
+
 @media only screen and (max-width: 900px) {
   .content {
     height: 80px;
   }
+
   .nav-xbootstrap {
     background: #fff;
     width: 200px;
@@ -168,15 +181,19 @@ a {
     overflow-x: hidden;
     height: 100%;
   }
+
   .d-nonee {
     display: none !important;
   }
+
   .nav-xbootstrap ul {
     display: block;
   }
+
   .nav-xbootstrap > ul {
     margin: 30px 0 0;
   }
+
   .title-mobile {
     display: block;
     top: 15px;
@@ -187,6 +204,7 @@ a {
     text-align: center;
     color: #fff;
   }
+
   .nav-xbootstrap.visible {
     left: 0px;
     -webkit-transition: left 0.25s ease;
@@ -200,7 +218,7 @@ a {
   .nav-bg-xbootstrap {
     display: inline-block;
     vertical-align: middle;
-    width: 90%;
+    width: 100%;
     height: 80px;
     margin: 0;
     position: absolute;
@@ -276,6 +294,10 @@ a {
     color: #fff !important;
   }
 
+  .nav-xbootstrap li a.logo {
+    background-color: transparent !important;
+  }
+
   .nav-xbootstrap li ul.dropdown li a {
     padding: 10px 10px 10px 30px;
   }
@@ -300,6 +322,7 @@ a {
     right: 0;
   }
 }
+
 @media only screen and (max-width: 1199px) {
   .fixed-top {
     position: fixed;
@@ -308,20 +331,23 @@ a {
     left: 0;
   }
 }
+
 @media only screen and (min-width: 901px) {
   .container-header > nav {
     width: 100vw;
   }
+
   .nav-xbootstrap {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .nav-xbootstrap ul {
-    height: 80px;
     display: flex;
     align-items: center;
   }
+
   .d-nonee {
     display: block;
   }
