@@ -73,24 +73,29 @@ video {
   font-size: 3.3rem;
   padding-top: 50px;
 }
+
 .title-service,
 .title-offer,
 .title-contact {
   font-size: 2.6rem;
 }
+
 .title-service,
 .title-offer,
 .btn {
   margin: 25px 0;
 }
+
 .description-intro {
   font-size: 2.1rem;
 }
+
 .description-service,
 .description-offer,
 .description-contact a {
   font-size: 1.7rem;
 }
+
 .description-offer {
   text-shadow: 1px 1px 3px black;
   width: 100%;
@@ -143,9 +148,15 @@ aside.position-absolute {
   background: var(--primaryBlue);
   padding: 65px 0 25px;
 }
+
 .description-contact {
   padding-top: 10px;
 }
+
+.rrss-link {
+  text-align: center;
+}
+
 .rrss1,
 .rrss2,
 .rrss3,
@@ -156,18 +167,23 @@ aside.position-absolute {
   width: 25vw;
   height: 25px;
 }
+
 .rrss1 {
   background-image: url("../img/facecolor.png");
 }
+
 .rrss2 {
   background-image: url("../img/twittercolor.png");
 }
+
 .rrss3 {
   background-image: url("../img/youtubecolor.png");
 }
+
 .rrss4 {
   background-image: url("../img/emailcolor.png");
 }
+
 @media only screen and (min-width: 901px) {
   .description-offer {
     width: 60%;
@@ -181,6 +197,7 @@ aside.position-absolute {
     width: 80%;
     left: 20%;
   }
+
   .absolute-especial > .description-offer {
     text-align: end;
   }
