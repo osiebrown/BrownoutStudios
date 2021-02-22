@@ -63,9 +63,8 @@ video {
 .description-service,
 .title-offer,
 .description-offer,
-.title-contact,
-.title-contact a,
-.description-contact a {
+.title-footer,
+hr {
   color: var(--colorfont);
 }
 
@@ -76,7 +75,7 @@ video {
 
 .title-service,
 .title-offer,
-.title-contact {
+.title-footer {
   font-size: 2.6rem;
 }
 
@@ -91,8 +90,7 @@ video {
 }
 
 .description-service,
-.description-offer,
-.description-contact a {
+.description-offer {
   font-size: 1.7rem;
 }
 
@@ -102,13 +100,16 @@ video {
 }
 
 .intro {
+  margin-top: -5px;
   background-image: url("../img/background1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
-
+.intro-container {
+  top: 5%;
+}
 .services {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
@@ -146,45 +147,25 @@ aside.position-absolute {
 
 .footer {
   background: var(--primaryBlue);
-  padding: 65px 0 25px;
+  padding: 45px 0 35px;
 }
-
-.description-contact {
-  padding-top: 10px;
-}
-
-.rrss-link {
-  text-align: center;
-}
-
-.rrss1,
-.rrss2,
-.rrss3,
-.rrss4 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 25vw;
-  height: 25px;
-}
-
-.rrss1 {
-  background-image: url("../img/facecolor.png");
-}
-
-.rrss2 {
-  background-image: url("../img/twittercolor.png");
-}
-
-.rrss3 {
-  background-image: url("../img/youtubecolor.png");
-}
-
-.rrss4 {
-  background-image: url("../img/emailcolor.png");
+.fas,
+.fab {
+  color: var(--color4);
+  font-size: 40px;
 }
 
 @media only screen and (min-width: 901px) {
+  .centered {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .intro-container {
+    top: 25%;
+  }
   .description-offer {
     width: 60%;
   }
@@ -194,9 +175,18 @@ aside.position-absolute {
   }
 
   aside.absolute-especial {
+    padding-left: 300px;
+
+    text-align: end;
+  }
+  .description-especial {
+    width: 100%;
+  }
+
+  /* aside.absolute-especial {
     width: 80%;
     left: 20%;
-  }
+  } */
 
   .absolute-especial > .description-offer {
     text-align: end;
