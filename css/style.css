@@ -51,18 +51,27 @@ a:hover {
 /*end general CSS*/
 .image-logo {
   height: 7vh;
+  margin-top: 10px;
 }
-
+main {
+  margin-top: 77px;
+}
 video {
   width: 100vw;
+}
+.video {
+  z-index: -1;
+}
+
+.title-offer,
+.description-offer {
+  color: var(--primaryBlue);
 }
 
 .title-intro,
 .description-intro,
 .title-service,
 .description-service,
-.title-offer,
-.description-offer,
 .title-footer,
 hr {
   color: var(--colorfont);
@@ -70,7 +79,7 @@ hr {
 
 .title-intro {
   font-size: 3.3rem;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .title-service,
@@ -95,21 +104,22 @@ hr {
 }
 
 .description-offer {
-  text-shadow: 1px 1px 3px black;
-  width: 100%;
+  /* width: 100%; */
 }
-
-.intro {
+.image-bg0 {
+  background-image: url("../img/background1.jpg");
+}
+/* .intro {
   margin-top: -5px;
   background-image: url("../img/background1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
-}
+  height: 550px;
+} 
 .intro-container {
   top: 5%;
-}
+}*/
 .services {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
@@ -117,7 +127,11 @@ hr {
 .offer {
   background-image: linear-gradient(to bottom, white, var(--color1));
 }
-
+.container-offer {
+  margin-top: 2.5%;
+  background: #ffffff80;
+}
+.image-bg0,
 .image-bg,
 .image-bg2,
 .image-bg3 {
@@ -125,7 +139,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 600px;
+  height: 400px;
 }
 
 .image-bg {
@@ -163,12 +177,22 @@ aside.position-absolute {
     left: 0;
     right: 0;
   }
-  .intro-container {
-    top: 25%;
+  .image-bg0,
+  .image-bg,
+  .image-bg2,
+  .image-bg3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 600px;
   }
-  .description-offer {
+  .container-offer {
+    margin-top: 20%;
+  }
+  /* .description-offer {
     width: 60%;
-  }
+  } */
 
   aside.position-absolute {
     bottom: 130px;
