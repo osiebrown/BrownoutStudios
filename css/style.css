@@ -61,6 +61,7 @@ video {
 }
 .video {
   z-index: -1;
+  margin-bottom: -5px;
 }
 
 .title-offer,
@@ -77,15 +78,10 @@ hr {
   color: var(--colorfont);
 }
 
-.title-intro {
-  font-size: 3.3rem;
-  padding-top: 20px;
-}
-
 .title-service,
 .title-offer,
 .title-footer {
-  font-size: 2.6rem;
+  font-size: 2.1rem;
 }
 
 .title-service,
@@ -95,7 +91,7 @@ hr {
 }
 
 .description-intro {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
 }
 
 .description-service,
@@ -128,7 +124,7 @@ hr {
   background-image: linear-gradient(to bottom, white, var(--color1));
 }
 .container-offer {
-  margin-top: 2.5%;
+  margin-top: 3.2%;
   background: #ffffff80;
 }
 .image-bg0,
@@ -188,7 +184,7 @@ aside.position-absolute {
     height: 600px;
   }
   .container-offer {
-    margin-top: 20%;
+    margin-top: 18%;
   }
   /* .description-offer {
     width: 60%;
