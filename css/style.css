@@ -64,13 +64,10 @@ video {
   margin-bottom: -5px;
 }
 
-.title-offer,
-.description-offer {
-  color: var(--primaryBlue);
-}
-
 .title-intro,
 .description-intro,
+.title-offer,
+.description-offer,
 .title-service,
 .description-service,
 .title-footer,
@@ -81,41 +78,24 @@ hr {
 .title-service,
 .title-offer,
 .title-footer {
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 
 .title-service,
 .title-offer,
 .btn {
-  margin: 25px 0;
-}
-
-.description-intro {
-  font-size: 1.6rem;
+  margin: 20px 0;
 }
 
 .description-service,
 .description-offer {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
-.description-offer {
-  /* width: 100%; */
-}
 .image-bg0 {
   background-image: url("../img/background1.jpg");
 }
-/* .intro {
-  margin-top: -5px;
-  background-image: url("../img/background1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
-} 
-.intro-container {
-  top: 5%;
-}*/
+
 .services {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
@@ -124,8 +104,12 @@ hr {
   background-image: linear-gradient(to bottom, white, var(--color1));
 }
 .container-offer {
-  margin-top: 3.2%;
-  background: #ffffff80;
+  height: 360px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    transparent,
+    rgba(0, 0, 0, 0.8)
+  );
 }
 .image-bg0,
 .image-bg,
@@ -135,9 +119,12 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 400px;
+  height: 360px;
 }
-
+.image-bg,
+.container-big {
+  height: 450px;
+}
 .image-bg {
   background-image: url("../img/bgoffer1.jpg");
 }
@@ -166,6 +153,16 @@ aside.position-absolute {
 }
 
 @media only screen and (min-width: 901px) {
+  .title-service,
+  .title-offer {
+    font-size: 2.2rem;
+  }
+
+  .description-service,
+  .description-offer {
+    font-size: 1.6rem;
+  }
+
   .centered {
     width: 80%;
     margin-left: auto;
@@ -186,9 +183,6 @@ aside.position-absolute {
   .container-offer {
     margin-top: 18%;
   }
-  /* .description-offer {
-    width: 60%;
-  } */
 
   aside.position-absolute {
     bottom: 130px;
@@ -202,11 +196,6 @@ aside.position-absolute {
   .description-especial {
     width: 100%;
   }
-
-  /* aside.absolute-especial {
-    width: 80%;
-    left: 20%;
-  } */
 
   .absolute-especial > .description-offer {
     text-align: end;
