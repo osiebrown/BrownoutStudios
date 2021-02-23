@@ -47,7 +47,9 @@ a {
 a:hover {
   background-color: transparent;
 }
-
+iframe {
+  width: 100%;
+}
 /*end general CSS*/
 .image-logo {
   height: 7vh;
@@ -96,7 +98,8 @@ hr {
   background-image: url("../img/background1.jpg");
 }
 
-.services {
+.services,
+.section-video-view {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
 
@@ -114,7 +117,8 @@ hr {
 .image-bg0,
 .image-bg,
 .image-bg2,
-.image-bg3 {
+.image-bg3,
+.image-bg5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,6 +140,9 @@ hr {
 .image-bg3 {
   background-image: url("../img/bgoffer3.jpg");
 }
+.image-bg5 {
+  background-image: url("../img/bgoffer5.jpg");
+}
 
 aside.position-absolute {
   bottom: 190px;
@@ -150,6 +157,10 @@ aside.position-absolute {
 .fab {
   color: var(--color4);
   font-size: 40px;
+}
+.title-view {
+  margin: 40% 0;
+  font-size: 2.5rem;
 }
 
 @media only screen and (min-width: 901px) {
@@ -199,5 +210,12 @@ aside.position-absolute {
 
   .absolute-especial > .description-offer {
     text-align: end;
+  }
+  .offer-view {
+    margin-top: 0;
+  }
+  .title-view {
+    margin: 15% 0;
+    font-size: 5rem;
   }
 }
