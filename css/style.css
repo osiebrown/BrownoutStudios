@@ -73,7 +73,8 @@ video {
 .title-service,
 .description-service,
 .title-footer,
-hr {
+hr,
+.btn-secondary a {
   color: var(--colorfont);
 }
 
