@@ -63,7 +63,9 @@ video {
 }
 .middle-title {
   font-size: 3rem;
+  font-weight: bold;
   color: var(--colorfont);
+  text-shadow: 2px 2px 4px black;
 }
 .title-footer,
 hr,
