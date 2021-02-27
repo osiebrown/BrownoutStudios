@@ -54,6 +54,20 @@ video {
 .video {
   z-index: -1;
 }
+
+.overlay {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+}
+.video-text {
+  top: 30%;
+  left: 17%;
+  color: var(--colorfont);
+  text-shadow: 2px 2px 4px black;
+  z-index: 6;
+}
 .middle {
   background-image: url(../img/background1.jpg);
   background-position: center;
@@ -100,6 +114,10 @@ hr,
 }
 
 @media only screen and (min-width: 901px) {
+  .video-text {
+    top: 40%;
+    left: 35%;
+  }
   .offer-view {
     margin-top: 0;
   }

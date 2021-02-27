@@ -94,10 +94,18 @@
     </header>
     <main>
       <section class="video">
+        <div class="overlay position-absolute"></div>
         <video autoplay="autoplay" loop playsinline muted>
           <source src="video/Website Brole Front Page.MP4" type="video/mp4" />
           <source src="video/Website Brole Front Page.webm" type="video/webm" />
         </video>
+        <article
+          class="video-text position-absolute text-center shadow-sm p-3 rounded"
+        >
+          <h1 class="fs-1 mb-4">Brownout Studios</h1>
+          <p class="card-text">The studio that cares WHAT HAPPENS NEXT!</p>
+          <a href="#" class="btn btn-primary">Learn More..</a>
+        </article>
       </section>
       <section class="intro container mr-0 ml-0 mt-4">
         <aside class="card shadow p-3 mb-5 bg-body rounded" style="width: 95vw">
@@ -107,7 +115,7 @@
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h1 class="card-title">Songwriters</h1>
+                <h2 class="card-title">Songwriters</h2>
                 <p class="card-text">
                   Are you a lyric writer with no way to complete your ideas?
                 </p>
@@ -129,7 +137,7 @@
 
       <section class="services container mt-4">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col-12 col-md-6">
+          <article class="col-12 col-md-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <img src="img/image2.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -150,8 +158,8 @@
                 <a href="#" class="btn btn-primary">Learn More..</a>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6">
+          </article>
+          <article class="col-12 col-md-6">
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <img src="img/image3.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
@@ -169,7 +177,7 @@
                 <a href="#" class="btn btn-primary">Learn More..</a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <section class="middle d-flex justify-content-center align-items-center">
@@ -247,16 +255,28 @@
           <hr class="mb-3" />
         </article>
         <article class="row">
-          <a class="col-3" href="https://facebook.com" target="_blank">
+          <a
+            class="col-3"
+            href="https://www.facebook.com/BrownOutStudios/"
+            target="_blank"
+          >
             <i class="fab fa-3x fa-facebook-square"></i>
           </a>
-          <a class="col-3" href="https://twitter.com" target="_blank">
+          <a
+            class="col-3"
+            href="https://twitter.com/brownoutstudios"
+            target="_blank"
+          >
             <i class="fab fa-3x fa-twitter-square"></i>
           </a>
-          <a class="col-3" href="https://youtube.com" target="_blank">
+          <a
+            class="col-3"
+            href="https://www.youtube.com/user/GrammyBoyArtists"
+            target="_blank"
+          >
             <i class="fab fa-3x fa-youtube-square"></i>
           </a>
-          <a class="col-3" href="mailto:contact@brownout.com" target="_blank">
+          <a class="col-3" href="contact.html" target="_blank">
             <i class="fas fa-3x fa-envelope-square"></i>
           </a>
         </article>
