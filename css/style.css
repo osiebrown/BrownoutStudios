@@ -11,6 +11,7 @@
 }
 
 body {
+  background-color: #eee;
   font-family: "Comfortaa", cursive !important;
   overflow-x: hidden;
 }
@@ -22,17 +23,6 @@ section {
 section * {
   position: relative;
   z-index: 2;
-}
-
-.filter-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.3;
-  z-index: 1;
 }
 
 img {
@@ -63,91 +53,34 @@ video {
 }
 .video {
   z-index: -1;
-  margin-bottom: -5px;
 }
-
-.title-intro,
-.description-intro,
-.title-offer,
-.description-offer,
-.title-service,
-.description-service,
+.middle {
+  background-image: url(../img/background1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.middle-title {
+  font-size: 3rem;
+  color: var(--colorfont);
+}
 .title-footer,
 hr,
 .btn-secondary a {
   color: var(--colorfont);
 }
 
-.title-service,
-.title-offer,
 .title-footer {
   font-size: 2rem;
 }
 
-.title-service,
-.title-offer,
 .btn {
   margin: 20px 0;
 }
 
-.description-service,
-.description-offer {
-  font-size: 1.4rem;
-}
-
-.image-bg0 {
-  background-image: url("../img/background1.jpg");
-}
-
-.services,
 .section-video-view {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
-}
-
-.offer {
-  background-image: linear-gradient(to bottom, white, var(--color1));
-}
-.container-offer {
-  height: 360px;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    transparent,
-    rgba(0, 0, 0, 0.8)
-  );
-}
-.image-bg0,
-.image-bg,
-.image-bg2,
-.image-bg3,
-.image-bg5 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 360px;
-}
-.image-bg,
-.container-big {
-  height: 450px;
-}
-.image-bg {
-  background-image: url("../img/bgoffer1.jpg");
-}
-
-.image-bg2 {
-  background-image: url("../img/bgoffer2.jpg");
-}
-
-.image-bg3 {
-  background-image: url("../img/bgoffer3.jpg");
-}
-.image-bg5 {
-  background-image: url("../img/bgoffer5.jpg");
-}
-
-aside.position-absolute {
-  bottom: 190px;
-  width: 100%;
 }
 
 .footer {
@@ -165,53 +98,6 @@ aside.position-absolute {
 }
 
 @media only screen and (min-width: 901px) {
-  .title-service,
-  .title-offer {
-    font-size: 2.2rem;
-  }
-
-  .description-service,
-  .description-offer {
-    font-size: 1.6rem;
-  }
-
-  .centered {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-  }
-  .image-bg0,
-  .image-bg,
-  .image-bg2,
-  .image-bg3 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 600px;
-  }
-  .container-offer {
-    margin-top: 18%;
-  }
-
-  aside.position-absolute {
-    bottom: 130px;
-  }
-
-  aside.absolute-especial {
-    padding-left: 300px;
-
-    text-align: end;
-  }
-  .description-especial {
-    width: 100%;
-  }
-
-  .absolute-especial > .description-offer {
-    text-align: end;
-  }
   .offer-view {
     margin-top: 0;
   }
