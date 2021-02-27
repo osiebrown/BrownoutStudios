@@ -68,6 +68,9 @@ video {
   text-shadow: 2px 2px 4px black;
   z-index: 6;
 }
+.intro > .card {
+  margin: auto;
+}
 .middle {
   background-image: url(../img/background1.jpg);
   background-position: center;
