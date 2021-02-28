@@ -63,7 +63,7 @@ video {
 }
 .video-text {
   top: 0;
-  
+
   color: var(--colorfont);
   text-shadow: 2px 2px 4px black;
   z-index: 6;
@@ -98,10 +98,10 @@ hr,
   margin: 20px 0;
 }
 
-.section-video-view {
+/* .section-video-view {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
-
+ */
 .footer {
   background: var(--primaryBlue);
   padding: 45px 0 35px;
@@ -111,14 +111,20 @@ hr,
   color: var(--color4);
   font-size: 40px;
 }
-.title-view {
-  margin: 40% 0;
-  font-size: 2.5rem;
+.banner-background {
+  background-image: url("../img/bgoffer5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 200px;
 }
-
+.title-view {
+  color: var(--colorfont);
+}
 @media only screen and (min-width: 901px) {
   .video-text {
-    top: 0
+    top: 0;
   }
   .offer-view {
     margin-top: 0;
