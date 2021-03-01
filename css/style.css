@@ -37,9 +37,7 @@ a {
 a:hover {
   background-color: transparent;
 }
-iframe {
-  width: 100%;
-}
+
 /*end general CSS*/
 .image-logo {
   height: 7vh;
@@ -51,8 +49,13 @@ main {
 video {
   width: 100vw;
 }
-.video {
+/* .video {
   z-index: -1;
+} */
+.video-title {
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
 }
 
 .overlay {
@@ -63,13 +66,16 @@ video {
 }
 .video-text {
   top: 0;
-
   color: var(--colorfont);
   text-shadow: 2px 2px 4px black;
   z-index: 6;
 }
 .intro > .card {
   margin: auto;
+}
+.card-intro > h2,
+h5 {
+  font-weight: bold;
 }
 .middle {
   background-image: url(../img/background1.jpg);
@@ -79,7 +85,7 @@ video {
   height: 200px;
 }
 .middle-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--colorfont);
   text-shadow: 2px 2px 4px black;
@@ -97,7 +103,14 @@ hr,
 .btn {
   margin: 20px 0;
 }
-
+.btn-outline-warning {
+  color: var(--colorfont);
+  border-color: var(--colorfont);
+}
+.btn-outline-success {
+  color: var(--primaryBlue);
+  border-color: var(--primaryBlue);
+}
 /* .section-video-view {
   background-image: linear-gradient(to top, var(--color4), var(--color1));
 }
@@ -125,6 +138,11 @@ hr,
 @media only screen and (min-width: 901px) {
   .video-text {
     top: 0;
+  }
+
+  .video-title {
+    font-size: 4rem;
+    width: 100%;
   }
   .offer-view {
     margin-top: 0;
