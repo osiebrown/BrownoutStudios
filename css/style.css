@@ -1,7 +1,7 @@
 /*general CSS*/
 
 :root {
-  font-size: 62.5%;
+  font-size: 72.5%;
   --color1: #48392a;
   --primaryBlue: #2c3d55;
   --colorfont: #eaf8bf;
@@ -105,9 +105,6 @@ label {
 .btn-secondary a {
   color: black;
 }
-/* .container-logo-mobile {
-  right: 30px;
-} */
 .logo-mobile {
   width: 60%;
 }
@@ -119,9 +116,12 @@ label {
 }
 
 /*end header*/
-
+/*start main*/
 main {
   margin-top: 74px;
+}
+.card-title {
+  color: var(--color1);
 }
 video {
   width: 100vw;
@@ -138,11 +138,14 @@ video {
   height: 99%;
   background-color: rgba(0, 0, 0, 0.46);
 }
-.video-text {
+.video-text-container {
   top: 0;
   color: var(--colorfont);
   text-shadow: 2px 2px 4px black;
   z-index: 6;
+}
+.video-text {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .intro > .card {
   margin: auto;
@@ -233,7 +236,7 @@ hr,
     display: block;
   }
   /*end header desktop*/
-  .video-text {
+  .video-text-container {
     top: 0;
   }
 
