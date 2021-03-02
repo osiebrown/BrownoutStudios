@@ -34,10 +34,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: transparent;
-}
-
 /*end general CSS*/
 .image-logo {
   height: 7vh;
@@ -101,20 +97,28 @@ hr,
 }
 
 .btn {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .btn-outline-warning {
   color: var(--colorfont);
+  border-color: var(--colorfont);
+}
+.btn-outline-warning:hover {
+  color: var(--primaryBlue);
+  background: var(--colorfont);
   border-color: var(--colorfont);
 }
 .btn-outline-success {
   color: var(--primaryBlue);
   border-color: var(--primaryBlue);
 }
-/* .section-video-view {
-  background-image: linear-gradient(to top, var(--color4), var(--color1));
+
+.btn-outline-success:hover {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary);
+  color: white;
 }
- */
+
 .footer {
   background: var(--primaryBlue);
   padding: 45px 0 35px;
