@@ -24,30 +24,109 @@ section * {
   position: relative;
   z-index: 2;
 }
-
+/* 
 img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 a {
   text-decoration: none;
 }
 
 /*end general CSS*/
-.image-logo {
-  height: 7vh;
-  margin-top: 10px;
+
+/*start header*/
+header {
+  height: 75px;
+  width: 100vw;
+  background-color: var(--primaryBlue);
 }
+.nav-complete {
+  height: 100vh;
+  width: 250px;
+}
+.mobile-header > label {
+  cursor: pointer;
+}
+label {
+  margin: 23px 10px;
+}
+.span1,
+.span2,
+.span3 {
+  left: 10px;
+  content: " ";
+  background-color: white;
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+.span1 {
+  top: -14px;
+}
+.span2 {
+  top: -6px;
+}
+.span3 {
+  top: 2px;
+}
+#button-main:checked ~ label > .span1 {
+  transform: rotate(140deg);
+  top: 0;
+}
+#button-main:checked ~ label > .span2 {
+  background-color: transparent;
+}
+#button-main:checked ~ label > .span3 {
+  transform: rotate(-140deg);
+  top: 0;
+}
+.nav-link,
+.dropdown-item {
+  color: white;
+}
+.nav,
+.dropdown-menu {
+  background-color: var(--primaryBlue);
+}
+.mobile-header .hidden-nav .nav .nav-item {
+  margin: 10px 0;
+}
+.hidden-nav {
+  margin-left: -250px;
+  z-index: 10;
+}
+#button-main:checked ~ .hidden-nav {
+  margin-left: 0;
+  transition: all 0.5s;
+}
+.btn-secondary a {
+  color: black;
+}
+.container-logo-mobile {
+  top: 25%;
+  right: 10%;
+}
+.logo-mobile {
+  width: 15vw;
+}
+.desktop-header {
+  display: none;
+}
+.desktop-logo {
+  width: 137px;
+}
+
+/*end header*/
+
 main {
-  margin-top: 77px;
+  margin-top: 74px;
 }
 video {
   width: 100vw;
 }
-/* .video {
-  z-index: -1;
-} */
 .video-title {
   font-size: 3rem;
   width: 50%;
@@ -104,6 +183,7 @@ hr,
   border-color: var(--colorfont);
 }
 .btn-outline-warning:hover {
+  transition: all 0.5s;
   color: var(--primaryBlue);
   background: var(--colorfont);
   border-color: var(--colorfont);
@@ -114,6 +194,7 @@ hr,
 }
 
 .btn-outline-success:hover {
+  transition: all 0.5s;
   background-color: var(--secondary) !important;
   border-color: var(--secondary);
   color: white;
@@ -140,6 +221,18 @@ hr,
   color: var(--colorfont);
 }
 @media only screen and (min-width: 901px) {
+  /*star header desktop*/
+  header {
+    height: 120px;
+  }
+  .mobile-header,
+  .logo-mobile {
+    display: none;
+  }
+  .desktop-header {
+    display: block;
+  }
+  /*end header desktop*/
   .video-text {
     top: 0;
   }
