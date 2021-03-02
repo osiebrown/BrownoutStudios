@@ -105,12 +105,11 @@ label {
 .btn-secondary a {
   color: black;
 }
-.container-logo-mobile {
-  top: 25%;
-  right: 10%;
-}
+/* .container-logo-mobile {
+  right: 30px;
+} */
 .logo-mobile {
-  width: 15vw;
+  width: 60%;
 }
 .desktop-header {
   display: none;
@@ -220,11 +219,12 @@ hr,
 .title-view {
   color: var(--colorfont);
 }
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 992px) {
   /*star header desktop*/
   header {
     height: 120px;
   }
+
   .mobile-header,
   .logo-mobile {
     display: none;
