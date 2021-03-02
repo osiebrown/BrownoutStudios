@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Font Awesome -->
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/styleheader.css" rel="stylesheet" />
+
     <title>Brownoutstudio</title>
     <meta
       content="The studio that cares WHAT HAPPENS NEXT!."
@@ -34,203 +34,159 @@
   </head>
 
   <body>
-    <header class="container-header fixed-top">
-      <nav>
-        <article class="nav-xbootstrap">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="#"
-                >Songwriting<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
-                <li><a href="#track">Track Writing</a></li>
-                <li><a href="beatstore.html">Beat Store</a></li>
-              </ul>
+    <header class="fixed-top d-flex py-4">
+      <!-- start header mobile -->
+      <section
+        class="mobile-header d-lg-none w-100 d-flex justify-content-between align-items-center"
+      >
+        <article class="position-relative">
+          <input type="checkbox" class="d-none" id="button-main" />
+          <label for="button-main" class="pl-3 position-relative">
+            <span class="span1 position-absolute"></span>
+            <span class="span2 position-absolute"></span>
+            <span class="span3 position-absolute"></span>
+          </label>
+          <div class="hidden-nav position-absolute">
+            <ul class="nav-complete nav flex-column mt-2 px-3">
+              <li class="nav-item">
+                <a class="fs-5 nav-link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="songwriting.html"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Songwriting</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Track Writing</a>
+                  </li>
+                  <li><a class="fs-5 dropdown-item" href="#">Beat Store</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Publishing</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Licensing Search</a>
+                  </li>
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Submit Music</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 nav-link" href="#">Mixing & Mastering</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 nav-link" href="#">Artist Portal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Lets Chat</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="fs-5 dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="container-logo-mobile">
+          <img src="img/logo-mobile.png" class="logo-mobile img-fluid" />
+        </article>
+      </section>
+
+      <!-- end header mobile -->
+      <!-- start header desktop -->
+      <section class="desktop-header w-100">
+        <article clasS="d-flex justify-content-center align-items-center">
+          <ul class="nav w-100 justify-content-evenly align-items-center">
+            <li class="nav-item">
+              <a class="fs-5 nav-link active" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
-            <li>
-              <a href="publishing.html"
-                >Publishing<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="songwriting.html"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Songwriting</a
+              >
+              <ul class="dropdown-menu">
                 <li>
-                  <a href="publishing.html#licencing">Licencing Search</a>
+                  <a class="fs-5 dropdown-item" href="#">Track Writing</a>
                 </li>
-                <li><a href="publishing.html#submitmusic">Submit Music</a></li>
+                <li><a class="fs-5 dropdown-item" href="#">Beat Store</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Publishing</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="fs-5 dropdown-item" href="#">Licensing Search</a>
+                </li>
+                <li><a class="fs-5 dropdown-item" href="#">Submit Music</a></li>
               </ul>
             </li>
             <li>
-              <a href="#" class="logo">
-                <img alt="Logo" class="image-logo d-nonee" src="img/logo.png" />
-              </a>
+              <a class="desktop-logo pt-0 nav-link" href="#"
+                ><img src="img/logo.png" class="img-fluid"
+              /></a>
             </li>
-            <li><a href="mixing.html">Mixing & Mastering</a></li>
-            <li><a href="artistportal.html">Artist Portal</a></li>
-            <li>
-              <a href="#contact"
-                >Lets Chat<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
-                <li><a href="contactform.html">Contact Us</a></li>
+            <li class="nav-item">
+              <a class="fs-5 nav-link" href="#">Mixing & Mastering</a>
+            </li>
+            <li class="nav-item">
+              <a class="fs-5 nav-link" href="#">Artist Portal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Lets Chat</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="fs-5 dropdown-item" href="#">Contact Us</a></li>
               </ul>
             </li>
           </ul>
         </article>
-        <article class="nav-bg-xbootstrap">
-          <div class="navbar-xbootstrap">
-            <span></span> <span></span> <span></span>
-          </div>
-          <a class="title-mobile" href="#">
-            <img alt="Logo" class="image-logo" src="img/logo.png" />
-          </a>
-        </article>
-      </nav>
+      </section>
+      <!-- end header desktop -->
     </header>
     <main>
-      <section class="offer">
-        <aside class="image-bg5">
-          <article class="container">
-            <div class="row text-center">
-              <aside
-                class="container-offer offer-view col-12 shadow-lg p-4 rounded"
-              >
-                <h2 class="title-offer title-view">Custom Track</h2>
-              </aside>
-            </div>
-          </article>
-        </aside>
-      </section>
-      <section class="section-video-view pt-2">
-        <div class="container">
-          <article class="row">
-            <aside class="col-12 col-lg-6">
-              <iframe
-                class="mt-4"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/9bN2ZryOS6E"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </aside>
-            <aside class="col-12 col-lg-6">
-              <h2 class="title-service">Sound Radio Ready</h2>
-              <p class="description-service">
-                Tier 1 publishing potential lives and dies on effective and
-                powerful songwriting. Teams build dreams- that's why Justin
-                Beiber, Selena Gomez, Usher, and nearly every other A-List
-                player creates music with others.
-                <br />
-                The idea that "combined effort generates incredible art" is the
-                lynchpin to how we operate at Brownout Studios.
-                <br />
-                Writing with us allows you to concentrate on the best parts of
-                what you do. If that's lyric writing, melody writing,
-                production/parts, etc: we've got you covered.
-              </p>
-              <button class="btn btn-secondary btn-lg">Learn More...</button>
-            </aside>
-          </article>
-        </div>
-      </section>
-      <!-- rfgdfg -->
-      <section class="services pb-4">
-        <div class="filter-overlay"></div>
-        <div class="container">
-          <article class="row text-center">
-            <aside class="col-12 col-lg-6 mt-4 pt-4">
-              <img
-                alt="img-fluid img-service"
-                src="https://androidphoria.com/wp-content/uploads/Aplicaciones-para-aprender-a-tocar-la-guitarra-1.jpg"
-              />
-              <h2 class="title-service" id="track">Co-Write</h2>
-              <p class="description-service w-lg-50 m-auto pb-3">
-                We are co-writers together on the track! This is a great option
-                because not only do we help you write the best song we possibly
-                can together, but we also help you take the song to the next
-                level. Here's how it works...
-                <br />
-                Total cost is $650 USD (includes all taxes). With a $300 down
-                payment we get to work on your track that matches your original
-                concepts. If you do not like our first pass, we will write
-                another track or revise the first based on your suggestions. If
-                by chance you still do not like the ideas we have provided to
-                you, we part as friends.
-                <br />
-                Assuming you will be like all our other customers, you will love
-                the production and quick demo we provide on the first pass. From
-                there, you pay the remainder of the balance due and we get to
-                work on creating a finished radio-ready product.
-                <br />
-                If you're not the singer / performer of the track, then you can
-                either hire your own singer, or we can also provide a great demo
-                singer at an additional $160 USD. (In some cases we can leverage
-                our relationships with other singer/songwriters and find a
-                performer of the song which helps to increase the songs earning
-                potential.)
-                <br />
-                Once all performances for the track are done, we will help mix
-                and master the song with no additional costs. We will then
-                non-exclusively add the completed work to our publishing library
-                and help you get the song into paying opportunities. All of the
-                details will be put into a Split Sheet Agreement with the agreed
-                upon splits.
-              </p>
-              <button class="btn btn-secondary btn-lg">
-                <a href="#">Learn More...</a>
-              </button>
-            </aside>
-            <aside class="col-12 col-lg-6 mt-4 pt-4">
-              <img
-                alt="img-fluid img-service"
-                src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-129188,msid-66972715/investments-ts-1200.jpg"
-              />
-              <h2 class="title-service">Track Buyout</h2>
-              <p class="description-service w-lg-50 m-auto pb-3">
-                We are work-for-hire on your track! With this option we will
-                work with you to deliver the best song we possibly can together.
-                At the end of the delivery, you own the finished track 100% and
-                are responsible for the future of it as well.
-                <br />
-                Total cost is $1605 USD (includes all taxes). With a $800 down
-                payment we get to work on your track that matches your original
-                concepts. If you do not like our first pass, we will write
-                another track or revise the first based on your suggestions. If
-                by chance you still do not like the ideas we have provided to
-                you, we part as friends.
-                <br />
-                Assuming you will be like all our other customers, you will love
-                the production and quick demo we provide on the first pass. From
-                there, you pay the remainder of the balance due and we get to
-                work on creating a finished radio-ready product.
-                <br />
-                If you're not the singer / performer of the track, then you can
-                either hire your own singer, or we can also provide a great demo
-                singer at an additional $160 USD. (In some cases we can leverage
-                our relationships with other singer/songwriters and find a
-                performer of the song which helps to increase the songs earning
-                potential.)
-                <br />
-                Once all performances for the track are done, we will help mix
-                and master the song with no additional costs. Once you approve
-                the final master, we will have concluded your work for hire and
-                provide you will all necessary stems. See our Terms of Use for
-                policy on all Works for Hire engagements
-              </p>
-              <button class="btn btn-secondary btn-lg">
-                <a href="#">Learn More...</a>
-              </button>
-            </aside>
-          </article>
-        </div>
-      </section>
+
     </main>
     <footer class="footer navbar d-flex justify-content-center" id="contact">
       <section>

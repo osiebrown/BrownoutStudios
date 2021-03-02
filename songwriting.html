@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Font Awesome -->
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/styleheader.css" rel="stylesheet" />
+
     <title>Brownoutstudio</title>
     <meta
       content="The studio that cares WHAT HAPPENS NEXT!."
@@ -34,81 +34,179 @@
   </head>
 
   <body>
-    <header class="container-header fixed-top">
-      <nav>
-        <article class="nav-xbootstrap">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="#"
-                >Songwriting<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
-                <li><a href="#track">Track Writing</a></li>
-                <li><a href="beatstore.html">Beat Store</a></li>
-              </ul>
+    <header class="fixed-top d-flex py-4">
+      <!-- start header mobile -->
+      <section
+        class="mobile-header d-lg-none w-100 d-flex justify-content-between align-items-center"
+      >
+        <article class="position-relative">
+          <input type="checkbox" class="d-none" id="button-main" />
+          <label for="button-main" class="pl-3 position-relative">
+            <span class="span1 position-absolute"></span>
+            <span class="span2 position-absolute"></span>
+            <span class="span3 position-absolute"></span>
+          </label>
+          <div class="hidden-nav position-absolute">
+            <ul class="nav-complete nav flex-column mt-2 px-3">
+              <li class="nav-item">
+                <a class="fs-5 nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Songwriting</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Track Writing</a>
+                  </li>
+                  <li><a class="fs-5 dropdown-item" href="#">Beat Store</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Publishing</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Licensing Search</a>
+                  </li>
+                  <li>
+                    <a class="fs-5 dropdown-item" href="#">Submit Music</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 nav-link" href="#">Mixing & Mastering</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 nav-link" href="#">Artist Portal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="fs-5 nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  role="button"
+                  aria-expanded="false"
+                  >Lets Chat</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="fs-5 dropdown-item" href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="container-logo-mobile">
+          <img src="img/logo-mobile.png" class="logo-mobile img-fluid" />
+        </article>
+      </section>
+
+      <!-- end header mobile -->
+      <!-- start header desktop -->
+      <section class="desktop-header w-100">
+        <article clasS="d-flex justify-content-center align-items-center">
+          <ul class="nav w-100 justify-content-evenly align-items-center">
+            <li class="nav-item">
+              <a
+                class="fs-5 nav-link active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
             </li>
-            <li>
-              <a href="publishing.html"
-                >Publishing<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Songwriting</a
+              >
+              <ul class="dropdown-menu">
                 <li>
-                  <a href="publishing.html#licencing">Licencing Search</a>
+                  <a class="fs-5 dropdown-item" href="#">Track Writing</a>
                 </li>
-                <li><a href="publishing.html#submitmusic">Submit Music</a></li>
+                <li><a class="fs-5 dropdown-item" href="#">Beat Store</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Publishing</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="fs-5 dropdown-item" href="#">Licensing Search</a>
+                </li>
+                <li><a class="fs-5 dropdown-item" href="#">Submit Music</a></li>
               </ul>
             </li>
             <li>
-              <a href="#" class="logo">
-                <img alt="Logo" class="image-logo d-nonee" src="img/logo.png" />
-              </a>
+              <a class="desktop-logo pt-0 nav-link" href="#"
+                ><img src="img/logo.png" class="img-fluid"
+              /></a>
             </li>
-            <li><a href="mixing.html">Mixing & Mastering</a></li>
-            <li><a href="artistportal.html">Artist Portal</a></li>
-            <li>
-              <a href="#contact"
-                >Lets Chat<span
-                  class="glyphicon glyphicon-chevron-down iconsize"
-                ></span
-              ></a>
-              <ul class="dropdown">
-                <li><a href="contactform.html">Contact Us</a></li>
+            <li class="nav-item">
+              <a class="fs-5 nav-link" href="#">Mixing & Mastering</a>
+            </li>
+            <li class="nav-item">
+              <a class="fs-5 nav-link" href="#">Artist Portal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="fs-5 nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+                >Lets Chat</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="fs-5 dropdown-item" href="#">Contact Us</a></li>
               </ul>
             </li>
           </ul>
         </article>
-        <article class="nav-bg-xbootstrap">
-          <div class="navbar-xbootstrap">
-            <span></span> <span></span> <span></span>
-          </div>
-          <a class="title-mobile" href="#">
-            <img alt="Logo" class="image-logo" src="img/logo.png" />
-          </a>
-        </article>
-      </nav>
+      </section>
+      <!-- end header desktop -->
     </header>
     <main>
       <section class="banner">
         <article
           class="banner-background d-flex justify-content-center align-items-center"
         >
-          <h1 class="title-view fs-1">Sonswriting</h1>
+          <h1 class="title-view fs-1 w-25 py-4 text-center">Songwriting</h1>
         </article>
       </section>
       <section class="intro mt-4">
         <aside class="card shadow p-3 mb-5 bg-body rounded" style="width: 98vw">
           <div class="row">
-            <div class="col-md-4">
-              <img src="img/image7.jpg" alt="..." />
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h2 class="card-title fs-2 mb-4">
+            <article class="col-md-6">
+              <img src="img/image7.jpg" class="img-fluid" alt="" />
+            </article>
+            <article class="col-md-6">
+              <div class="card-body card-intro">
+                <h2
+                  class="card-title fs-1 mb-4 shadow p-3 mb-5 bg-body rounded"
+                >
                   What kind of songwriter are you?
                 </h2>
                 <p class="card-text fs-4">
@@ -134,12 +232,19 @@
                   Are you sitting on a mountain of track ideas and track starts
                   and are looking to go to the next level?
                 </p>
-                <a href="#" class="w-50 btn btn-primary">Learn More..</a>
+                <p class="text-center">
+                  <a
+                    href="songwriting.html"
+                    class="w-50 btn btn-outline-success"
+                    >Learn More..</a
+                  >
+                </p>
               </div>
-            </div>
+            </article>
           </div>
         </aside>
       </section>
+
       <section class="middle d-flex justify-content-center align-items-center">
         <h2 class="middle-title">Let us help you stay productive</h2>
       </section>
@@ -149,7 +254,11 @@
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <img src="img/image8.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title mt-4 mb-4 fs-3">Music Tracks</h5>
+                <h5
+                  class="card-title text-center mt-4 mb-4 fs-3 shadow p-3 mb-5 bg-body rounded"
+                >
+                  Music Tracks
+                </h5>
                 <p class="card-text fs-5">
                   Our award winning music producers are great at developing full
                   "radio-ready" tracks from your ideas. Whether you choose from
@@ -166,7 +275,11 @@
             <div class="card shadow p-3 mb-5 bg-body rounded">
               <img src="img/image9.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title mt-4 mb-4 fs-3">Samples and Loops</h5>
+                <h5
+                  class="card-title text-center mt-4 mb-4 fs-3 shadow p-3 mb-5 bg-body rounded"
+                >
+                  Samples and Loops
+                </h5>
                 <p class="card-text fs-5">
                   Are you a producer looking for inspiration? We may have
                   exactly what you are looking for in our growing library of
@@ -180,46 +293,16 @@
           </article>
         </div>
       </section>
-
-      <!-- 
-      <section class="services pb-4">
-        <div class="filter-overlay"></div>
-        <div class="container">
-          <article class="row text-center">
-            <aside class="col-12 col-lg-6 mt-4 pt-4">
-              <img
-                alt="img-fluid img-service"
-                src="https://sesionmusical.com/wp-content/uploads/2019/12/dj.jpg"
-              />
-              <h2 class="title-service" id="track">Music Tracks</h2>
-              <p class="description-service w-lg-50 m-auto pb-3">
-                Our award winning music producers are great at developing full
-                "radio-ready" tracks from your ideas. Whether you choose from
-                our existing library of tracks, or have us write a custom track
-                for you, you will go away feeling like you're ready to get
-                published!! So what are you waiting for?
-              </p>
-              <button class="btn btn-secondary btn-lg">
-                <a href="#">Learn More...</a>
-              </button>
-            </aside>
-            <aside class="col-12 col-lg-6 mt-4 pt-4">
-              <img
-                alt="img-fluid img-service"
-                src="https://media.metrolatam.com/2018/10/23/tiendadediscos-1d95bf730dc55ec0b82120e42ad18974-1200x600.jpg"
-              />
-              <h2 class="title-service">Samples and Loops</h2>
-              <p class="description-service w-lg-50 m-auto pb-3">
-                Are you a producer looking for inspiration? We may have exactly
-                what you are looking for in our growing library of loops,
-                samples, and plugin presets! We're determined to make you sound
-                like the pro you're destined to be! Are you ready?
-              </p>
-              <button class="btn btn-secondary btn-lg">Learn More...</button>
-            </aside>
-          </article>
-        </div>
-      </section> -->
+      <section class="container">
+        <article class="card shadow p-3 mb-5 bg-body rounded text-center">
+          <h2 class="fs-1 shadow p-3 mb-5 bg-body rounded text-center">
+            Songwriter Current Events
+          </h2>
+          <div class="p-3 h-100 d-inline-block modal-dialog-scrollable">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.bing.com%2Fnews%2Fsearch%3Fq%3DTop%2BSongs%26FORM%3DHDRSC6%3F%26format%3Drss&limit=10&showtitle=false&type=js"></script>
+          </div>
+        </article>
+      </section>
     </main>
     <footer class="footer navbar d-flex justify-content-center" id="contact">
       <section>

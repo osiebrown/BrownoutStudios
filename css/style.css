@@ -144,8 +144,10 @@ video {
   text-shadow: 2px 2px 4px black;
   z-index: 6;
 }
-.video-text {
+.video-text,
+.title-view {
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
 }
 .intro > .card {
   margin: auto;
@@ -212,12 +214,12 @@ hr,
   font-size: 40px;
 }
 .banner-background {
-  background-image: url("../img/bgoffer5.jpg");
+  background-image: url("../img/bannerview1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 200px;
+  height: 300px;
 }
 .title-view {
   color: var(--colorfont);
