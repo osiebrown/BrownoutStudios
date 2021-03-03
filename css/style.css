@@ -44,7 +44,7 @@ header {
 }
 .nav-complete {
   height: 100vh;
-  width: 250px;
+  width: 190px;
 }
 .mobile-header > label {
   cursor: pointer;
@@ -91,11 +91,14 @@ label {
 .dropdown-menu {
   background-color: var(--primaryBlue);
 }
+.dropdown-mobile {
+  margin: -55px 0 0 120px !important;
+}
 .mobile-header .hidden-nav .nav .nav-item {
   margin: 10px 0;
 }
 .hidden-nav {
-  margin-left: -250px;
+  margin-left: -190px;
   z-index: 10;
 }
 #button-main:checked ~ .hidden-nav {
