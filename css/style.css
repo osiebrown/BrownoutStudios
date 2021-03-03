@@ -94,6 +94,9 @@ label {
 .dropdown-mobile {
   margin: -55px 0 0 120px !important;
 }
+.dropdown-mobile-especial {
+  margin: -45px 0 0 120px !important;
+}
 .mobile-header .hidden-nav .nav .nav-item {
   margin: 10px 0;
 }
