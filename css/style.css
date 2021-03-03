@@ -133,6 +133,7 @@ video {
   font-size: 3rem;
   width: 50%;
   margin: auto;
+  text-shadow: 2px 2px 3px black;
 }
 
 .overlay {
@@ -143,14 +144,15 @@ video {
 }
 .video-text-container {
   top: 0;
-  color: var(--colorfont);
-  text-shadow: 2px 2px 4px black;
   z-index: 6;
 }
 .video-text,
 .title-view {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 40px;
+}
+.video-text > .card-text {
+  color: var(--colorfont);
 }
 .intro > .card {
   margin: auto;
@@ -226,6 +228,7 @@ hr,
 }
 .title-view {
   color: var(--colorfont);
+  text-shadow: 2px 2px 4px var(--primaryBlue);
 }
 @media only screen and (min-width: 992px) {
   /*star header desktop*/
