@@ -1,1 +1,7 @@
-var vid = document.getElementById("vid").play();
+/* var vid = document.getElementById("vid");
+
+function playvideo() {
+  vid.play();
+}
+
+playvideo(); */
