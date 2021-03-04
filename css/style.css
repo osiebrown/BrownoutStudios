@@ -36,92 +36,6 @@ a {
 
 /*end general CSS*/
 
-/*start header*/
-header {
-  height: 75px;
-  width: 100vw;
-  background-color: var(--primaryBlue);
-}
-.nav-complete {
-  height: 100vh;
-  width: 190px;
-}
-.mobile-header > label {
-  cursor: pointer;
-}
-label {
-  margin: 23px 10px;
-}
-.span1,
-.span2,
-.span3 {
-  left: 10px;
-  content: " ";
-  background-color: white;
-  width: 35px;
-  height: 4px;
-  border-radius: 5px;
-  transition: all 0.4s ease;
-}
-.span1 {
-  top: -14px;
-}
-.span2 {
-  top: -6px;
-}
-.span3 {
-  top: 2px;
-}
-#button-main:checked ~ label > .span1 {
-  transform: rotate(140deg);
-  top: 0;
-}
-#button-main:checked ~ label > .span2 {
-  background-color: transparent;
-}
-#button-main:checked ~ label > .span3 {
-  transform: rotate(-140deg);
-  top: 0;
-}
-.nav-link,
-.dropdown-item {
-  color: white;
-}
-.nav,
-.dropdown-menu {
-  background-color: var(--primaryBlue);
-}
-.dropdown-mobile {
-  margin: -55px 0 0 120px !important;
-}
-.dropdown-mobile-especial {
-  margin: -45px 0 0 120px !important;
-}
-.mobile-header .hidden-nav .nav .nav-item {
-  margin: 10px 0;
-}
-.hidden-nav {
-  margin-left: -190px;
-  z-index: 10;
-}
-#button-main:checked ~ .hidden-nav {
-  margin-left: 0;
-  transition: all 0.5s;
-}
-.btn-secondary a {
-  color: black;
-}
-.logo-mobile {
-  width: 60%;
-}
-.desktop-header {
-  display: none;
-}
-.desktop-logo {
-  width: 137px;
-}
-
-/*end header*/
 /*start main*/
 main {
   margin-top: 74px;
@@ -234,19 +148,6 @@ hr,
   text-shadow: 2px 2px 4px var(--primaryBlue);
 }
 @media only screen and (min-width: 992px) {
-  /*star header desktop*/
-  header {
-    height: 120px;
-  }
-
-  .mobile-header,
-  .logo-mobile {
-    display: none;
-  }
-  .desktop-header {
-    display: block;
-  }
-  /*end header desktop*/
   .video-text-container {
     top: 0;
   }
