@@ -51,6 +51,7 @@ video {
   padding-top: 10px;
   margin: auto;
   text-shadow: 2px 2px 3px black;
+  color: var(--colorfont);
 }
 
 .overlay {
@@ -70,6 +71,7 @@ video {
 }
 .video-text > .card-text {
   color: var(--colorfont);
+  text-shadow: 2px 2px 3px black;
 }
 .intro > .card {
   margin: auto;
