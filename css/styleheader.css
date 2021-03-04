@@ -17,8 +17,8 @@
 a {
   text-decoration: none;
 }
-.image-logo {
-  width: 12vw;
+.title-mobile > .image-logo {
+  width: 11%;
 }
 .container-header {
   background: var(--primaryBlue);
@@ -159,8 +159,19 @@ a {
 .title-mobile {
   display: none;
 }
+.especial-item {
+  margin-top: 0 !important;
+}
+@media only screen and (max-width: 767px) {
+  .title-mobile > .image-logo {
+    width: 20%;
+  }
+}
 
 @media only screen and (max-width: 900px) {
+  .especial-item {
+    margin-top: -25px !important;
+  }
   .content {
     height: 80px;
   }
